@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnglishAI — Apprenez l'anglais avec l'intelligence artificielle</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ════════════════ NAV ════════════════ -->
+  <header class="nav" id="nav">
+    <a href="#home" class="nav__logo">English<span>AI</span></a>
+    <button class="nav__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav__links" id="navLinks">
+      <a href="#home"       class="nav__link">Accueil</a>
+      <a href="#conv"       class="nav__link">Conversations</a>
+      <a href="#grammar"    class="nav__link">Grammaire</a>
+      <a href="#vocab"      class="nav__link">Vocabulaire</a>
+      <a href="#teachers"   class="nav__link">Enseignants</a>
+      <a href="#plan"       class="nav__link">Mon Plan</a>
+      <a href="#home" class="nav__cta btn">Commencer</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ════════════════ HERO ════════════════ -->
+    <section class="hero" id="home">
+      <div class="hero__bg">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+        <div class="grid-overlay"></div>
+      </div>
+      <div class="hero__content">
+        <div class="hero__badge reveal">✦ Propulsé par l'IA</div>
+        <h1 class="hero__title reveal">
+          Votre allié<br />
+          <em>IA</em> pour<br />
+          l'anglais
+        </h1>
+        <p class="hero__sub reveal">
+          Apprenez plus vite, sans stress, sans jugement —<br />
+          un professeur personnel disponible 24h/24, gratuit.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#conv" class="btn btn--primary">Démarrer maintenant →</a>
+          <a href="#plan" class="btn btn--ghost">Voir mon plan</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="stat"><strong>3×</strong><span>plus rapide</span></div>
+          <div class="stat__sep"></div>
+          <div class="stat"><strong>0€</strong><span>gratuit</span></div>
+          <div class="stat__sep"></div>
+          <div class="stat"><strong>24/7</strong><span>disponible</span></div>
+        </div>
+      </div>
+      <div class="hero__card-wrap reveal">
+        <div class="chat-card">
+          <div class="chat-card__header">
+            <span class="dot dot--green"></span>
+            <span>Professeur IA · en ligne</span>
+          </div>
+          <div class="chat-card__body" id="chatDemo"></div>
+          <div class="chat-card__input">
+            <span>Tapez votre message…</span>
+            <button class="chat-card__mic" aria-label="Microphone">🎤</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ FEATURES STRIP ════════════════ -->
+    <div class="strip">
+      <div class="strip__track">
+        <span>✦ Sans Jugement</span>
+        <span>✦ Correction en Temps Réel</span>
+        <span>✦ Exercices Personnalisés</span>
+        <span>✦ Simulations de Conversation</span>
+        <span>✦ Plan Hebdomadaire</span>
+        <span>✦ Flashcards IA</span>
+        <span>✦ Sans Jugement</span>
+        <span>✦ Correction en Temps Réel</span>
+        <span>✦ Exercices Personnalisés</span>
+        <span>✦ Simulations de Conversation</span>
+        <span>✦ Plan Hebdomadaire</span>
+        <span>✦ Flashcards IA</span>
+      </div>
+    </div>
+
+    <!-- ════════════════ CONVERSATIONS ════════════════ -->
+    <section class="section" id="conv">
+      <div class="section__tag reveal">02 — Simulations</div>
+      <h2 class="section__title reveal">Pratiquez sans<br /><em>la peur de l'erreur</em></h2>
+      <p class="section__desc reveal">
+        Jouez des rôles réels avec l'IA : hôtel, restaurant, entretien d'embauche…
+        Utilisez votre micro pour un entraînement oral avec retour instantané.
+      </p>
+
+      <div class="scenarios reveal">
+        <div class="scenario-card" data-scenario="hotel">
+          <div class="scenario-card__icon">🏨</div>
+          <h3>Réservation d'hôtel</h3>
+          <p>Apprenez à réserver une chambre, demander des informations et gérer les imprévus.</p>
+          <button class="btn btn--outline scenario-btn">Lancer la simulation</button>
+        </div>
+        <div class="scenario-card" data-scenario="restaurant">
+          <div class="scenario-card__icon">🍽️</div>
+          <h3>Au restaurant</h3>
+          <p>Commander, exprimer vos préférences, demander la carte ou l'addition.</p>
+          <button class="btn btn--outline scenario-btn">Lancer la simulation</button>
+        </div>
+        <div class="scenario-card" data-scenario="interview">
+          <div class="scenario-card__icon">💼</div>
+          <h3>Entretien d'embauche</h3>
+          <p>Préparez-vous à présenter votre profil, répondre aux questions types en anglais pro.</p>
+          <button class="btn btn--outline scenario-btn">Lancer la simulation</button>
+        </div>
+        <div class="scenario-card" data-scenario="airport">
+          <div class="scenario-card__icon">✈️</div>
+          <h3>À l'aéroport</h3>
+          <p>Enregistrement, contrôle, annonces — naviguer un aéroport en anglais sans stress.</p>
+          <button class="btn btn--outline scenario-btn">Lancer la simulation</button>
+        </div>
+        <div class="scenario-card" data-scenario="doctor">
+          <div class="scenario-card__icon">🏥</div>
+          <h3>Chez le médecin</h3>
+          <p>Décrire vos symptômes, comprendre les conseils médicaux en anglais.</p>
+          <button class="btn btn--outline scenario-btn">Lancer la simulation</button>
+        </div>
+        <div class="scenario-card" data-scenario="shopping">
+          <div class="scenario-card__icon">🛍️</div>
+          <h3>Shopping</h3>
+          <p>Demander des tailles, couleurs, prix, échanger un article.</p>
+          <button class="btn btn--outline scenario-btn">Lancer la simulation</button>
+        </div>
+      </div>
+
+      <!-- Modal simulation -->
+      <div class="modal" id="simModal">
+        <div class="modal__box">
+          <button class="modal__close" id="closeModal">✕</button>
+          <div class="modal__title" id="modalTitle">Simulation</div>
+          <div class="modal__prompt" id="modalPrompt"></div>
+          <div class="modal__copy-hint">📋 Copiez ce prompt dans votre IA préférée (ChatGPT, Claude…)</div>
+          <button class="btn btn--primary" id="copyPrompt">Copier le prompt</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ GRAMMAR ════════════════ -->
+    <section class="section section--dark" id="grammar">
+      <div class="section__tag reveal">03 — Grammaire</div>
+      <h2 class="section__title reveal">Corrigez &amp; <em>comprenez</em><br />chaque erreur</h2>
+      <p class="section__desc reveal">
+        Soumettez un texte : l'IA corrige ET explique chaque faute pour que vous mémorisiez la règle.
+        Générez aussi des exercices personnalisés à votre niveau.
+      </p>
+
+      <div class="grammar-area reveal">
+        <div class="grammar-panel">
+          <label class="grammar-panel__label">Votre texte en anglais</label>
+          <textarea id="grammarInput" class="grammar-panel__textarea" placeholder="Écrivez ou collez votre texte ici…&#10;&#10;Ex : Yesterday I go to the market and buyed some apple."></textarea>
+          <div class="grammar-panel__actions">
+            <select id="levelSelect" class="grammar-panel__select">
+              <option value="A1">Niveau A1 – Débutant</option>
+              <option value="A2">Niveau A2 – Élémentaire</option>
+              <option value="B1" selected>Niveau B1 – Intermédiaire</option>
+              <option value="B2">Niveau B2 – Avancé</option>
+              <option value="C1">Niveau C1 – Expert</option>
+            </select>
+            <button class="btn btn--primary" id="correctBtn">Corriger avec l'IA ✦</button>
+          </div>
+        </div>
+        <div class="grammar-panel grammar-panel--result">
+          <label class="grammar-panel__label">Résultat &amp; explications</label>
+          <div class="grammar-panel__output" id="grammarOutput">
+            <p class="grammar-panel__placeholder">Le résultat apparaîtra ici avec les corrections détaillées…</p>
+          </div>
+          <button class="btn btn--outline" id="genExercise">Générer un exercice personnalisé</button>
+        </div>
+      </div>
+
+      <div class="exercise-box reveal" id="exerciseBox" style="display:none">
+        <h3 class="exercise-box__title">🎯 Exercice personnalisé — <span id="exLevel"></span></h3>
+        <div id="exerciseContent"></div>
+      </div>
+    </section>
+
+    <!-- ════════════════ VOCAB ════════════════ -->
+    <section class="section" id="vocab">
+      <div class="section__tag reveal">04 — Vocabulaire &amp; Prononciation</div>
+      <h2 class="section__title reveal">Apprenez les mots<br /><em>en contexte</em></h2>
+      <p class="section__desc reveal">
+        Des listes thématiques, la phonétique de chaque mot, et une analyse de votre accent.
+      </p>
+
+      <div class="themes reveal">
+        <button class="theme-tag active" data-theme="marketing">📊 Marketing</button>
+        <button class="theme-tag" data-theme="voyage">✈️ Voyage</button>
+        <button class="theme-tag" data-theme="cuisine">🍳 Cuisine</button>
+        <button class="theme-tag" data-theme="tech">💻 Tech</button>
+        <button class="theme-tag" data-theme="sante">🏥 Santé</button>
+        <button class="theme-tag" data-theme="finance">💰 Finance</button>
+      </div>
+
+      <div class="vocab-grid reveal" id="vocabGrid"></div>
+
+      <div class="phonetic-tool reveal">
+        <h3>🔊 Transcription phonétique</h3>
+        <p>Entrez une phrase pour obtenir sa prononciation phonétique (API IPA).</p>
+        <div class="phonetic-tool__row">
+          <input type="text" id="phoneticInput" placeholder="Ex : I would like to schedule a meeting…" />
+          <button class="btn btn--primary" id="phoneticBtn">Analyser</button>
+        </div>
+        <div class="phonetic-tool__result" id="phoneticResult"></div>
+      </div>
+
+      <div class="elsa-card reveal">
+        <div class="elsa-card__icon">🎯</div>
+        <div>
+          <h3>Analysez votre accent avec ELSA Speak</h3>
+          <p>Application spécialisée qui analyse votre prononciation phonème par phonème et vous guide vers un accent natif.</p>
+          <a href="https://elsaspeak.com" target="_blank" class="btn btn--outline">Découvrir ELSA Speak ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ TEACHERS ════════════════ -->
+    <section class="section section--dark" id="teachers">
+      <div class="section__tag reveal">05 — Espace Enseignants</div>
+      <h2 class="section__title reveal">Créez vos supports<br /><em>en quelques secondes</em></h2>
+      <p class="section__desc reveal">
+        Plans de cours, fiches de travail, quiz, questions sur vidéos YouTube —
+        tout ce dont un enseignant a besoin, généré par l'IA.
+      </p>
+
+      <div class="tools-grid reveal">
+        <div class="tool-card">
+          <div class="tool-card__num">01</div>
+          <h3>Plan de cours complet</h3>
+          <p>Générez un plan structuré avec objectifs, activités, évaluation — pour n'importe quel niveau et thème.</p>
+          <button class="btn btn--outline tool-prompt-btn" data-tool="lesson">Voir le prompt →</button>
+        </div>
+        <div class="tool-card">
+          <div class="tool-card__num">02</div>
+          <h3>Fiche de travail</h3>
+          <p>Créez des fiches d'exercices (texte à trous, QCM, production écrite) adaptées au niveau de vos élèves.</p>
+          <button class="btn btn--outline tool-prompt-btn" data-tool="worksheet">Voir le prompt →</button>
+        </div>
+        <div class="tool-card">
+          <div class="tool-card__num">03</div>
+          <h3>Quiz interactif</h3>
+          <p>Générez un quiz de 10 questions sur n'importe quel thème grammatical ou lexical.</p>
+          <button class="btn btn--outline tool-prompt-btn" data-tool="quiz">Voir le prompt →</button>
+        </div>
+        <div class="tool-card">
+          <div class="tool-card__num">04</div>
+          <h3>Questions sur vidéo YouTube</h3>
+          <p>Collez une transcription YouTube et obtenez des questions de compréhension, un glossaire et des activités.</p>
+          <button class="btn btn--outline tool-prompt-btn" data-tool="youtube">Voir le prompt →</button>
+        </div>
+      </div>
+
+      <div class="modal" id="toolModal">
+        <div class="modal__box">
+          <button class="modal__close" id="closeToolModal">✕</button>
+          <div class="modal__title" id="toolModalTitle">Prompt Enseignant</div>
+          <div class="modal__prompt" id="toolModalPrompt"></div>
+          <div class="modal__copy-hint">📋 Copiez dans ChatGPT, Claude ou votre IA préférée</div>
+          <button class="btn btn--primary" id="copyToolPrompt">Copier le prompt</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ PLAN ════════════════ -->
+    <section class="section" id="plan">
+      <div class="section__tag reveal">06 — Plan d'Étude</div>
+      <h2 class="section__title reveal">Votre programme<br /><em>sur mesure</em></h2>
+      <p class="section__desc reveal">
+        Générez un plan hebdomadaire personnalisé selon votre niveau, votre objectif et le temps disponible.
+        L'IA se concentre sur vos points faibles.
+      </p>
+
+      <div class="plan-builder reveal">
+        <div class="plan-builder__form">
+          <div class="form-group">
+            <label>Niveau actuel</label>
+            <select id="planLevel">
+              <option>A1 – Débutant</option>
+              <option>A2 – Élémentaire</option>
+              <option selected>B1 – Intermédiaire</option>
+              <option>B2 – Avancé</option>
+              <option>C1 – Expert</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Objectif principal</label>
+            <select id="planGoal">
+              <option>Conversations du quotidien</option>
+              <option>Anglais professionnel</option>
+              <option>Préparation examen (IELTS/TOEFL)</option>
+              <option>Voyage</option>
+              <option>Grammaire &amp; écrit</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Temps par jour</label>
+            <select id="planTime">
+              <option>15 minutes</option>
+              <option selected>30 minutes</option>
+              <option>45 minutes</option>
+              <option>1 heure</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Points faibles (optionnel)</label>
+            <input type="text" id="planWeakness" placeholder="Ex : prononciation, temps verbaux…" />
+          </div>
+          <button class="btn btn--primary" id="generatePlan">Générer mon plan ✦</button>
+        </div>
+        <div class="plan-builder__result" id="planResult">
+          <div class="plan-placeholder">
+            <span>📅</span>
+            <p>Votre plan personnalisé apparaîtra ici</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flashcard-cta reveal">
+        <div class="flashcard-cta__icon">🃏</div>
+        <div>
+          <h3>Révisez avec Anki</h3>
+          <p>Exportez votre vocabulaire et vos points de grammaire en flashcards Anki pour des révisions espacées scientifiquement prouvées.</p>
+          <a href="https://apps.ankiweb.net" target="_blank" class="btn btn--outline">Télécharger Anki ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════ CTA FINAL ════════════════ -->
+    <section class="cta-final">
+      <div class="cta-final__bg">
+        <div class="blob blob--4"></div>
+      </div>
+      <h2 class="reveal">Prêt à maîtriser<br /><em>l'anglais avec l'IA ?</em></h2>
+      <p class="reveal">Rejoignez des milliers d'apprenants qui progressent chaque jour — gratuitement.</p>
+      <a href="#conv" class="btn btn--primary btn--lg reveal">Commencer maintenant →</a>
+    </section>
+
+  </main>
+
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">English<span>AI</span></div>
+      <div class="footer__links">
+        <a href="#home">Accueil</a>
+        <a href="#conv">Conversations</a>
+        <a href="#grammar">Grammaire</a>
+        <a href="#vocab">Vocabulaire</a>
+        <a href="#teachers">Enseignants</a>
+        <a href="#plan">Mon Plan</a>
+      </div>
+      <div class="footer__copy">© 2025 EnglishAI — Tous droits réservés</div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
